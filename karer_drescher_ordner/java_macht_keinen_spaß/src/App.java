@@ -4,5 +4,7 @@ public class App {
 	System.out.println("Step 3");
     }
 
-    public void thisIsANewMethod() { }
+    public void thisIsANewMethod() {
+        System.out.println("This is a new method");
+     }
 }
