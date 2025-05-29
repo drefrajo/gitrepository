@@ -5,5 +5,9 @@ public class App {
 
     public void thisIsANewMethod() {
         System.out.println("This is a new method");
+        System.out.println("Hier wird ein Bug gefixt!");
      }
+
+    public void thisIsANewMethod2() {
+        System.out.println("This is a new method 2");
 }
