@@ -3,5 +3,7 @@ public class App {
         System.out.println("Hello, World!");
     }
 
-    public void thisIsANewMethod() { }
+    public void thisIsANewMethod() {
+        System.out.println("This is a new method");
+     }
 }
