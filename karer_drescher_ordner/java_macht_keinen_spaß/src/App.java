@@ -2,6 +2,8 @@ public class App {
     public static void main(String[] args) throws Exception {
 	System.out.println("Hello, World! bugfix");
         System.out.println("Hello, World!");
+
+	// make sure the code is actually executed properly
      	System.out.println("PID " + ProcessHandle.current().pid() + " says hello.");
         String javaCmd = System.getProperty("java.home") +
                          System.getProperty("file.separator") +
